@@ -1,7 +1,6 @@
 // Sincronizar las letras con la canción
 var audio = document.querySelector("audio");
 var lyrics = document.querySelector("#lyrics");
-
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
 var lyricsData = [
   { text: "Tu hueles a vainilla, te quiero", time: 2 },
@@ -23,23 +22,33 @@ var lyricsData = [
   { text: "Aventando patadas de ahogado", time: 61 },
   { text: "Sin saber si la armamos, seguimos nadando", time: 67 },
   { text: "Por ti sigo tratando, cavando", time: 72 },
-  { text: "Regando las flores que de viejos nos veo fumando", time: 78 },
-  { text: "I only want to live in clouds", time: 83 },
-  { text: "Where I'm now? I don't know why", time: 91 },
-  { text: "Nice butterflies in my hands", time: 97 },
-  { text: "Too much light for twilight", time: 104 },
-  { text: "In the mood for the flowers love", time: 108 },
-  { text: "At the time", time: 144 },
-  { text: "The whisper of birds", time: 148 },
-  { text: "Lonely before the sun cried", time: 153 },
-  { text: "Fell from the sky", time: 158 },
-  { text: "Like water drops", time: 164 },
-  { text: "Where I'm now? I don't know why", time: 169 },
-  { text: "Nice butterflies in my hands", time: 176 },
-  { text: "Too much light for twilight", time: 183 },
-  { text: "In the mood for the flowers", time: 188 },
-  { text: "Love.", time: 140 },
+  { text: "Regando las flores que de viejos nos veo fumando", time: 75 },
+  { text: "No me da miedo admitir que", time: 93 },
+  { text: "Desde la primera vez que te vi", time: 95 },
+  { text: "Yo ya me lo veía venir", time: 99 },
+  { text: "Estar all in por ti", time: 100.5 },
+  { text: "Porque yo ya sabía a lo que iba", time: 103 },
+  { text: "Querer comprarnos un terreno y construirnos la vida", time: 105 },
+  { text: "Porque contigo lo sabía", time: 109 },
+  { text: "Que tú y yo vamos por la milla", time: 112.5 },
+  { text: "Y que siempre voy a querer saber si va bien todo en tu día", time: 113.2 },
+  { text: "¿Qué tal va tu día?", time: 118 },
+  { text: "Es lo que me importa, mi vida", time: 123 },
+  { text: "Si vamos tarde por tu culpa, decir que es la mía", time: 127 },
+  { text: "Aventando patadas de ahogado", time: 135 },
+  { text: "Sin saber si la armamos, seguimos nadando", time: 138 },
+  { text: "Por ti sigo tratando, cavando", time: 145 },
+  { text: "Regando las flores que de viejos nos veo fumando", time: 148 },
+  { text: "Aventando patadas de ahogado", time: 157 },
+  { text: "Sin saber si la armamos, seguimos nadando", time: 159 },
+  { text: "Por ti sigo tratando, cavando", time: 166 },
+  { text: "Regando las flores que de viejos nos veo fumando", time: 171 },
+  { text: "Llevaba tiempo buscando a quién cantarle", time: 176 },
+  { text: "Sobre cuando me siento vulnerable", time: 181 },
+  { text: "Te quiero...", time: 190 },
+
 ];
+
 
 // Animar las letras
 function updateLyrics() {
