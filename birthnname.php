@@ -5,7 +5,7 @@ if (isset($_POST["nombre"]) && isset($_POST["fecha"])) {
     $fecha = $_POST["fecha"];
 
     // Cambia la fecha de nacimiento al formato correcto.
-    if ($nombre == "karol johanna ruiz ortega" && $fecha == "02/01/2006" or $fecha == "03/01/2006") {
+    if ($nombre= "karol ruiz ortega" or $nombre == "karol johanna ruiz ortega" && $fecha == "02/01/2006" ) {
         $_SESSION["miamor"] = "Tu eres el amor de mi vida, sigue";
         $mostrarFormulario = false;
         unset($_SESSION["error"]); // Borrar el mensaje de error si existe
@@ -153,7 +153,7 @@ if (isset($_POST["nombre"]) && isset($_POST["fecha"])) {
             </div>
             <div class="form-group">
                 <label for="fecha">Coloca debajo tu fecha de nacimiento:</label>
-                <input type="text" class="form-control" name="fecha" id="fecha" placeholder="DD/MM/AA">
+                <input type="text" class="form-control" name="fecha" id="fecha" placeholder="DD/MM/AA" required>
             </div>
             <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
         </form>
